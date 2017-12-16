@@ -1,0 +1,18 @@
+{
+    "name": "mjollstar/php-mvc-fw-v3",
+    "description": "my small php mvc framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rivel babindamana",
+            "email": "rivelbab@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": ["library/", "library/min/" ,"library/core/" , "application/controllers/", "application/models/"]
+        }
+    }
+}

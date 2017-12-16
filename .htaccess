@@ -1,0 +1,32 @@
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+    # Tell PHP that the mod_rewrite module is ENABLED.
+    SetEnv HTTP_MOD_REWRITE On
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php?_route=$1?%{QUERY_STRING} [PT,L]
+</IfModule>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak|psd|DS_Store|project)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+    SetOutputFilter DEFLATE
+    # Don't compress
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|swf)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+    #Dealing with proxy servers
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent
+    </IfModule>
+</IfModule>
+
+# customization of HTTP response headers
+<IfModule mod_headers.c>
+    Header unset Server
+    RequestHeader unset Server
+    ServerSignature Off
+</IfModule>

@@ -1,0 +1,16 @@
+body{
+    padding: 1%;
+    margin: 1%;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin: 2%;
+}
+
+
+h1{
+    color: green;
+}
