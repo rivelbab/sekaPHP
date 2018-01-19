@@ -53,4 +53,6 @@ cette commande va installer toutes les dépendances et la votre projet est prêt
 
 - Et hooppp; enjoy coding
 
+- Fonctionnement : Consultez le wiki https://github.com/rivelbab/sekaPHP/wiki/Mode-de-fonctionnement
+
 @Rivelbab Paris 2018
