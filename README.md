@@ -30,4 +30,27 @@ SekaPHP est un framework que j'ai développé from scratch, il permet donc de mi
 
 Bref ce projet étant encore en cours de dev, n'hésitez pas à me contacter pour me laisser vos avis. 
 
+INSTALLATION
+-------------
+
+- Cloner ou télécharger l'archive en cliquant sur le bouton vert 
+
+pour cloner, placez-vous dans la racine de votre server (le fameux www) puis tapez dans la console la cmd suivante 
+
+>_ git clone https://github.com/rivelbab/sekaPHP.git
+
+- une fois cloner ou télécharger et dézipper, renommer le dossier avec le nom de votre projet et placez-vous à l'intérieur de celui-ci.
+
+Sous linux, un simple "cd nom_du_projet" suffit.
+
+- Une fois dans le répertoire du projet, tapez(toujours dans la console) la commande suivante :
+
+>_ composer install
+
+cette commande va installer toutes les dépendances et la votre projet est prêt.
+
+- Dernière chose, modifier le fichier config/config.php avec les bonnes informations (base de données, ...)
+
+- Et hooppp; enjoy coding
+
 @Rivelbab Paris 2018
